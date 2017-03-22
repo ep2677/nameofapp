@@ -1,0 +1,8 @@
+Started GET "/" for ::1 at 2017-03-19 15:51:51 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/edward/.rvm/gems/ruby-2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/edward/.rvm/gems/ruby-2.4.0/gems/railties-5.0.2/lib/rails/templates/rails/welcome/index.html.erb (7.1ms)
+Completed 200 OK in 73ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
