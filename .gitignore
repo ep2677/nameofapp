@@ -44,13 +44,29 @@ bower.json
 .byebug_history
 
 # Ignore bundler config.
-/.bundle 
+/.bundle
 
 # Ignore all logfiles and tempfiles.
 /log/*
 !/log/.keep
 /tmp
 
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+### macOS ###
 *.DS_Store  
 .AppleDouble
 .LSOverride
@@ -77,3 +93,28 @@ Icon
 Network Trash Folder  
 Temporary Items  
 .apdisk
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db  
+ehthumbs.db  
+ehthumbs_vista.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab  
+*.msi  
+*.msm  
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+.env
+coverage/  
+public/system/*  
