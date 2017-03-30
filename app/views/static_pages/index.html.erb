@@ -1,9 +1,12 @@
-<h1>StaticPages#index</h1>
-<p>Welcome! The date and time is <%= Time.now%></p>
+
 
 <h1>Welcome to Bike Berlin</h1>
-<h2> Your source for used bikes in Berlin</h2>
-
+<div class="imagediv">
+<%= image_tag("tealbike.jpg", class:"img-responsive, tealbike") %>
+</div>
+<div>
+	<h2> Your source for used bikes in Berlin.</h2>
+</div>
 <!-- to comment out erb tags use "#" inside the tag like so:
 
 <%#=variable%> or <%#variable%>
