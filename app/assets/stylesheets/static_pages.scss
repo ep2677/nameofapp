@@ -19,6 +19,9 @@ body {
   margin: 0;
   margin-bottom: 40px;
 }
+p {
+  padding-left: 10px;
+}
 h1 {
   font-family : Arial, Verdana, sans-serif;
   color : $orange;
@@ -26,11 +29,13 @@ h1 {
   background-color: white;
   margin-bottom: 16px;
   padding-top: 40px;
+  padding-left: 5px;
 }
 h2 {
   font-family: Arial, Verdana, sans-serif;
   color: $Maroon;
   text-align: left;
+  padding-left: 25px;
 }
 .imagediv {
   background-image: url("bike3.jpg");
@@ -54,17 +59,33 @@ h2 {
 }
 nav {
   background-color: $Maroon;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   height: 40px;
+  overflow: hidden;
+}
+.nav_left {
+  float: left;
+}
+.nav_right {
+  float: right;
+  padding-right: 40px;
 }
 nav ul li {
   display: inline-block;
   background-color: $Maroon;
   color: white;
-  padding: 10px;
-  border: 4px, solid, white;
+}
+nav li a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 11px;
+}
+nav li a:visited {
+  color: white;
 }
 footer {
   background-color: $Maroon;
@@ -76,4 +97,20 @@ footer {
 }
 footer p {
   padding: 8px;
+}
+#email_link {
+  color: $orange;
+  padding-left: 25px;
+}
+/* Contact Page */
+.form-group label {
+  color: purple;
+}
+.btn-default {
+  color: white;
+  background-color: $orange;
+}
+.btn-default:hover {
+  color: white;
+  background-color: purple;
 }

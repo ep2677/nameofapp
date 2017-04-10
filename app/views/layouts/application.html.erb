@@ -12,19 +12,23 @@
   </head>
 
   <body>
-  	<nav>
-  		<ul>
-  			<li>Home</li>
-  			<li>Bikes</li>
-        <li>About</li>
-  			<li>Contact</li>
-  		</ul>
-  	</nav>
+    <nav>
+      
+      <ul class="nav_left">
+        <li><%=link_to 'Home', static_pages_index_path %></li>
+      </ul>
+      <ul class="nav_right">
+        <li><%=link_to 'Bikes', products_path %></li>
+        <li><%=link_to 'About', static_pages_about_path %></li>
+        <li><%=link_to 'Contact', static_pages_contact_path %></li>
+      </ul>
+
+    </nav>
 
     <%= yield %>
 
     <footer class="container-fluid">
-    	<p>&copy; 2015 Bike Berlin</p>
+      <p>&copy; 2015 Bike Berlin</p>
     </footer>
   </body>
 </html>
