@@ -1,31 +1,24 @@
 <div id="new_listing">
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
-  <strong>Text:</strong>
-  <%= @product.text %>
-</p>
-
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
-
-<p>
-  <strong>String:</strong>
-  <%= @product.string %>
-</p>
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
 </div>
+
+<div class="col-md3 col-lg-3">
+</div>
+<div class="col-md-6 col-lg-6 product_div">
+    <p class="product_title"><%= @product.name %> </p>
+    <div class="product_image"> 
+      <img src=<%=@product.image_url %>>
+    </div>
+    <div class="product_description"> <%= @product.description %> 
+    </div>
+
+  <!--  <li>Text:</li>
+      <div> <%= @product.text %></div>
+      <li>Image url:</li>-->
+    
+   <!-- <li>String:</li>
+      <div> <%= @product.string %></div>-->
+  <%= link_to 'Edit', edit_product_path(@product) %> |
+  <%= link_to 'Back', products_path %>
+
+  </div>

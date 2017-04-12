@@ -1,13 +1,31 @@
 $maroon : #660000;
 $orange : #ff6600;
 
-
-#new_product {
+.field {
+  width: 50%;
   margin-left: 20px;
-  width: 25%;
 }
-#new_product input {
+.field input {
   float: right;
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .field {
+    width: 90%;
+  }
+  .field input {
+    width: 75%;
+    float:right;
+  }
+}
+.top_of_field {
+  margin-top: 35px;
+}
+.actions {
+  position: relative;
+  left: 545px;
+  margin-top: 10px;
+  color: $orange;
 }
 #new_product label {
   margin-top: 10px;
@@ -29,7 +47,64 @@ td {
   margin-top: 75px;
   margin-left: 20px;
 }
-
+#new_product_link  a {
+  color: purple;
+  font-size: 1.5em;
+  padding: 0 10px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  border: 2px solid purple;
+}
+#new_product_link a:hover {
+  color: white;
+  background-color: purple;
+}
+.inline_list {
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+}
+.inline_list li {
+  display: inline-block;
+}
+.inline_list a {
+  font-size: .75em;
+  color: black;
+  padding: 0 2px;
+  text-align: center;
+}
+.product_title {
+  color: $maroon;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 10px;
+}
+.product_div {
+  height: 500px;
+  border: 2px solid white;
+  background: radial-gradient(white, #d3d3d3);
+  display: inline-block;
+}
+.product_image {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+.product_image > img {
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+}
+.product_description {
+  margin-top: 15px;
+}
+.bottom_div {
+  position: fixed;
+  bottom: 4px;
+}
 
 /*
 body {
