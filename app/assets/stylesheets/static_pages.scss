@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $orange : #FF6600;
-$Maroon : #660000;
+$maroon : #660000;
 * {
   box-sizing: border-box;
   overflow: auto;
@@ -33,15 +33,15 @@ h1 {
 }
 h2 {
   font-family: Arial, Verdana, sans-serif;
-  color: $Maroon;
+  color: $maroon;
   text-align: left;
   padding-left: 25px;
 }
 .imagediv {
   background-image: url("bike3.jpg");
   background-size: cover;
-  border-top: 2px solid $Maroon;
-  border-bottom: 2px solid $Maroon;
+  border-top: 2px solid $maroon;
+  border-bottom: 2px solid $maroon;
 }
 .tealbike {
   display: block;
@@ -49,7 +49,7 @@ h2 {
   margin-left: 2%;
   width: 40%;
   border-radius: 6px;
-  border: 3px solid $Maroon;
+  border: 3px solid $maroon;
 }
 @media only screen and (max-width: 768px){
   .tealbike {
@@ -58,7 +58,7 @@ h2 {
   }
 }
 nav {
-  background-color: $Maroon;
+  background-color: $maroon;
   position: absolute;
   top: 0;
   width: 100%;
@@ -74,7 +74,7 @@ nav {
 }
 nav ul li {
   display: inline-block;
-  background-color: $Maroon;
+  background-color: $maroon;
   color: white;
 }
 nav li a {
@@ -88,7 +88,7 @@ nav li a:visited {
   color: white;
 }
 footer {
-  background-color: $Maroon;
+  background-color: $maroon;
   color: white;
   position: fixed;  
   bottom: 0;
@@ -102,7 +102,70 @@ footer p {
   color: $orange;
   padding-left: 25px;
 }
+/* Bikes PAage */
+
+#new_product_link  a {
+  color: white;
+  background-color: purple;
+  font-size: 1.5em;
+  padding: 0 10px;
+  text-decoration: none;
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  border: 2px solid purple;
+}
+#new_product_link a:hover {
+  color: purple;
+  background-color: white;
+}
+.product_title {
+  color: $maroon;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 10px;
+}
+.product_div {
+  height: 500px;
+  border: 2px solid white;
+  background: radial-gradient(white, #d3d3d3);
+  display: inline-block;
+}
+.product_image {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+.product_image > img {
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+}
+.product_description {
+  margin-top: 15px;
+}
+.bottom_div {
+  position: fixed;
+  bottom: 4px;
+}
+/* Links at bottom of Product div */
+.inline_list {
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+}
+.inline_list li {
+  display: inline-block;
+}
+.inline_list a {
+  font-size: .75em;
+  color: black;
+  padding: 0 2px;
+  text-align: center;
+}
 /* Contact Page */
+
 .form-group label {
   color: purple;
 }
@@ -113,4 +176,35 @@ footer p {
 .btn-default:hover {
   color: white;
   background-color: purple;
+}
+/* Newproduct, edit..forms */
+.field {
+  width: 50%;
+  margin-left: 20px;
+}
+.field input {
+  float: right;
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .field {
+    width: 90%;
+  }
+  .field input {
+    width: 75%;
+    float:right;
+  }
+}
+.top_of_field {
+  margin-top: 35px;
+}
+.actions {
+  position: relative;
+  left: 545px;
+  margin-top: 10px;
+  color: $orange;
+}
+#new_listing {
+  margin-top: 75px;
+  margin-left: 20px;
 }
