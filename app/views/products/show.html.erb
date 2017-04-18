@@ -7,8 +7,8 @@
     <div class="product_image"> 
       <img src=<%=@product.image_url %>>
     </div>
-    <div class="product_description"> <%= @product.description %> 
-    </div>
+    <p class="product_description"> <%= @product.description %> 
+    </p>
     <p> Colour: <%= @product.colour %></p>
     <p> Price: $<%= @product.price %> </p>
 
@@ -16,4 +16,4 @@
   <%= link_to 'Edit', edit_product_path(@product) %> |
   <%= link_to 'Back', products_path %>
 
-  </div>
+</div>
