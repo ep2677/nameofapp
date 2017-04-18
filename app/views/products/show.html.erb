@@ -9,6 +9,8 @@
     </div>
     <div class="product_description"> <%= @product.description %> 
     </div>
+    <p> Colour: <%= @product.colour %></p>
+    <p> Price: $<%= @product.price %> </p>
 
  
   <%= link_to 'Edit', edit_product_path(@product) %> |

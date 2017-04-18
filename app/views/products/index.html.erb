@@ -6,11 +6,13 @@
 <% @products.each do |product| %>
   <div class="col-md-12 col-lg-6 col-xs-12 product_div">
       <p class="product_title"><%= product.name %> </p>
-      <div class="product_image"> 
+      <p class="product_image"> 
         <img src=<%=product.image_url %>>
-      </div>
-      <div class="product_description"> <%= product.description %> 
-      </div>
+      </p>
+      <p class="product_description"> <%= product.description %> 
+      </p>
+      <p> Colour: <%=product.colour%></p>
+      <p> Price: $<%= product.price%></p>
     
       <ul class="inline_list">
         <li><%= link_to 'Show', product %>|</li>
@@ -26,3 +28,6 @@
 <div id="new_product_link">
 <%= link_to 'New Product', new_product_path %>
 </div>
+
+
+
