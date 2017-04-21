@@ -4,9 +4,11 @@
 
 <div class="col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 col-xs-12 product_div">
     <p class="product_title"><%= @product.name %> </p>
-    <div class="product_image"> 
-      <img src=<%=@product.image_url %>>
-    </div>
+    <section class="product_image"> 
+      <% if @product.image_url.present? %>
+        <%= image_tag(@product.image_url) %>
+      <% end %>
+    </section>
     <p class="product_description"> <%= @product.description %> 
     </p>
     <p> Colour: <%= @product.colour %></p>

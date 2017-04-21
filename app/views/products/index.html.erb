@@ -7,14 +7,15 @@
     <p class="product_title"><%= product.name %></p>
   
     <section class="product_image">
-      <img src= <%= product.image_url %>>
+      <% if product.image_url.present? %>
+        <%= image_tag(product.image_url) %>
+      <% end %>
     </section>
-
-
+    
     <p class="product_description"><%= product.description %></p>
 
-   <p>Colour: <%= product.colour %></p>
-   <p>Price: $<%= product.price %></p>
+    <p>Colour: <%= product.colour %></p>
+    <p>Price: $<%= product.price %></p>
 
     <ul class="inline_list">
       <li><%= link_to 'Show', product %>|</li>
