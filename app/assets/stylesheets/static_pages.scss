@@ -18,6 +18,7 @@ body {
   height: 100%;
   margin: 0;
   margin-bottom: 40px;
+  margin-top: 40px;
 }
 p {
   padding-left: 10px;
@@ -212,4 +213,14 @@ footer p {
 /* Landing Page */
 #landing_page {
   margin-top: 50px;
+}
+.carousel-inner > .item > img {
+    margin: 0 auto;
+    height: 500px;
+}
+.carousel-indicators li {
+  background-color: $maroon;
+}
+.carousel-indicators .active {
+  background-color: orange;
 }

@@ -4,26 +4,7 @@
 
 <section class="container-fluid">
   <% @products.each do |product| %>
-  <section class="col-md-12 col-lg-6 col-xs-12 product_section">
-    <p class="product_title"><%= product.name %></p>
-  
-    <section class="product_image">
-      <% if product.image_url.present? %>
-        <%= image_tag(product.image_url) %>
-      <% end %>
-    </section>
-    
-    <p class="product_description"><%= product.description %></p>
-
-    <p>Colour: <%= product.colour %></p>
-    <p>Price: $<%= product.price %></p>
-
-    <ul class="inline_list">
-      <li><%= link_to 'Show', product %>|</li>
-      <li><%= link_to 'Edit', edit_product_path(product) %>|</li>
-      <li> <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></li>
-    </ul>
-  </section>
+    <%= render @products %>
   <% end %>
 </section>
 
