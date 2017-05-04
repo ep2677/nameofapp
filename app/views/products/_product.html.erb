@@ -3,7 +3,8 @@
 
   <section class="product_image">
     <% if product.image_url.present? %>
-      <%= image_tag(product.image_url) %>
+      
+      <%=link_to(image_tag(product.image_url, class:"product_image"), product) %>
     <% end %>
   </section>
   

@@ -15,3 +15,6 @@ Rails.application.routes.draw do
 end
 
 
+# standard way, 
+# because CRUD created actions in conrtoller(products)
+# get '/products/:id', to: 'products#show'
