@@ -4,7 +4,8 @@
 
 <section class="container-fluid">
   <% @products.each do |product| %>
-    <%= render @products %>
+    <%= render partial: "product", locals:{ product:product} %>
+
   <% end %>
 </section>
 

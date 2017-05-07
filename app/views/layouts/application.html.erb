@@ -22,7 +22,7 @@
           <li><%=link_to 'Home', static_pages_index_path %></li>
         </ul>
         <nav class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
+          <form class="navbar-form navbar-right" action="/products">
             <div class="form-group">  
             <%= form_tag("/products", method:"get") do %>
             <%= label_tag(:q, "") %>
@@ -31,14 +31,16 @@
             </div>
           </form>
             <ul class="nav navbar-nav navbar-right dropdown-toggle">
+
             <li><%=link_to 'Bikes', products_path %></li>
             <li><%=link_to 'About', static_pages_about_path %></li>
             <li><%=link_to 'Contact', static_pages_contact_path %></li>
+            <%end%>
           </ul>
         </nav>
       </div>
     </nav>
-    <% end %>
+    
 
     <%= yield %>
 
