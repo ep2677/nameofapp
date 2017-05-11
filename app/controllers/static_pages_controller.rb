@@ -8,12 +8,10 @@ class StaticPagesController < ApplicationController
     @products = Product.limit(3)
   end
   def thank_you
+      @products = Product.limit(3)
       @name = params[:name]
       @email = params[:email]
       @message = params[:message]
-      ActionMailer::Base.mail(:from => @email, 
-        :to => 'epwalsh77@gmail.com',
-        :subject => "A new contact message from #{@name}",
-        :body => @message).deliver_now
+      UserMailer.contact_form(@email, @name, @message).deliver_now
   end
 end
