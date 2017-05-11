@@ -8,7 +8,6 @@ class StaticPagesController < ApplicationController
     @products = Product.limit(3)
   end
   def thank_you
-      @products = Product.limit(3)
       @name = params[:name]
       @email = params[:email]
       @message = params[:message]
