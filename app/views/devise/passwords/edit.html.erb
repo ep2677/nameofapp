@@ -8,14 +8,12 @@
     <div class="row">
       <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
         <div class="form-group devise_forms">
-
         <% if @minimum_password_length %>
-          <em>(<%= @minimum_password_length %> characters minimum)</em><br />
         <% end %>
-        <%= f.password_field :password, autofocus: true, autocomplete: "off", placeholder:"New Password" %>
+        <%= f.password_field :password, autofocus: true, autocomplete: "off", placeholder:" New Password, #(@minimum_password_length) characters minimum." , class:"form-control" %>
         </div>
         <div class="form-group">
-         <%= f.password_field :password_confirmation, autocomplete: "off", placeholder:"Confirm new password" %>
+         <%= f.password_field :password_confirmation, autocomplete: "off", placeholder:"Confirm new password",class:"form-control" %>
         </div>
         <div>
           <%= f.submit "Change my password", class:"btn btn-info contact_button" %>
