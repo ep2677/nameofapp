@@ -234,7 +234,6 @@ footer p {
 /* Devise Links */
 #devise_links a {
   color: red;
-  margin-left: 30px;
 }
 .devise_forms {
   margin-top: 20px;
@@ -242,4 +241,21 @@ footer p {
 #devise_links {
   position: fixed;
   bottom: 60px;
+  margin-left: 30px;
+}
+/* Users Pages */
+.users_links {
+  margin-left: 38px;
+}
+.users_links a {
+  color: purple;
+}
+.users_links li {
+  display: inline-block;
+}
+.new_user_btn {
+  margin-left: 34px;
+}
+.users_div {
+  margin-top: 10px;
 }
