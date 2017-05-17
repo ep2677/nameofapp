@@ -48,8 +48,16 @@
         </nav>
       </div>
     </nav>
-    
-
+    <% if alert %>
+      <div class="alert alert-danger" role="alert">
+        <%= alert %>
+      </div>
+    <% end %>
+    <% if notice %>
+      <div class="alert alert-warning" role="notice">
+        <%= notice %>
+      </div>
+      <% end %>
     <%= yield %>
 
     <footer class="container-fluid">
