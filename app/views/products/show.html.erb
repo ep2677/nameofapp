@@ -21,6 +21,6 @@
   <h4> <span class="glyphicon glyphicon-pencil"></span> Comments </h4>
 
   <div>
-    <%= @product.comments.order(rating: :desc).first %>
+    <%= @product.highest_rating_comment %>
   </div>
 </div>
