@@ -14,8 +14,13 @@
     <p> Colour: <%= @product.colour %></p>
     <p> Price: $<%= @product.price %> </p>
 
- 
   <%= link_to 'Edit', edit_product_path(@product) %> |
   <%= link_to 'Back', :back %>
+</div>
+<div class="col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 col-xs-12 product_div">
+  <h4> <span class="glyphicon glyphicon-pencil"></span> Comments </h4>
 
+
+<%= @product.comments.order(rating: :desc).first %>
+<%= @product.comments.order(rating: :asc).first %>
 </div>
