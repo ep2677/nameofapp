@@ -44,7 +44,6 @@ h1 {
   text-align: center;
   background-color: white;
   margin-bottom: 16px;
-  padding-top: 40px;
   padding-left: 5px;
 }
 h2 {
@@ -76,7 +75,9 @@ h5 {
     margin: 1em auto;
   }
 }
-
+#homepage_h2 {
+  margin-top: 50px;
+}
 footer {
   background-color: $maroon;
   color: white;
@@ -113,14 +114,15 @@ footer p {
   color: $maroon;
   font-size: 1.5em;
   text-align: center;
-  padding-top: 10px;
+  padding: 20px 0;
 }
 .product_div,
 .product_section {
-  height: 500px;
+  height: 600px;
   border: 2px solid white;
   background: radial-gradient(white, #d3d3d3);
   display: inline-block;
+  overflow: scroll;
 }
 .product_image {
   height: 300px;
@@ -141,6 +143,16 @@ footer p {
 .bottom_div {
   position: fixed;
   bottom: 4px;
+}
+#comments {
+  margin-left: 20px;
+  overflow: auto;
+  text-align: center;
+}
+#comment_textarea {
+  width: 75%;
+  height: 100px;
+  margin-top: 20px;
 }
 /* Links at bottom of Product div */
 .inline_list {
@@ -198,7 +210,7 @@ footer p {
   color: $orange;
 }
 #new_listing {
-  margin-top: 75px;
+  
   margin-left: 20px;
 }
 /* Landing Page */
