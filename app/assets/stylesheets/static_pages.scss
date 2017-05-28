@@ -169,6 +169,29 @@ footer p {
   padding: 0 2px;
   text-align: center;
 }
+/* Pagination */
+.pagination {
+  color: $maroon;
+  width: 100%;
+  text-align: center;
+}
+.pagination a:hover {
+  text-decoration: none;
+}
+.pagination a,
+.pagination a:visited {
+  color: $maroon;
+}
+.previous_page,
+.next_page {
+  font-size: 16px;
+  color: $maroon;
+}
+.current {
+  color: $orange;
+  font-size: 16px;
+  font-weight: bold;
+}
 /* Contact Page */
 
 .form-group label {
