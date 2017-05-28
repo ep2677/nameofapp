@@ -5,9 +5,10 @@
 <section class="container-fluid">
   <% @products.each do |product| %>
     <%= render partial: "product", locals:{ product:product} %>
-
   <% end %>
 </section>
+
+  <%= will_paginate @products, :page_links =>true %>
 
  <br>
 
