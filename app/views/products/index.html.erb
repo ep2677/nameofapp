@@ -3,9 +3,7 @@
 <h1>Products</h1>
 
 <section class="container-fluid">
-  <% @products.each do |product| %>
-    <%= render partial: "product", locals:{ product:product} %>
-  <% end %>
+  <%= render @products %>
 </section>
 
   <%= will_paginate @products, :page_links =>true %>
