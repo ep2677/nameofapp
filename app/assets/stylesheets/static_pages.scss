@@ -180,6 +180,11 @@ footer p {
   padding: 0 2px;
   text-align: center;
 }
+.show_links,
+.show_links:hover {
+  color: red;
+  text-decoration: none;
+}
 /* Pagination */
 .pagination {
   color: $maroon;
