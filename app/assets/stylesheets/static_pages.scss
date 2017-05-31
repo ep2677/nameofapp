@@ -13,11 +13,11 @@ $maroon : #660000;
   background-color: $maroon;
 }
 .navbar-default .navbar-nav > li > a {
-    color: white;
+  color: white;
 }
 .navbar-default .navbar-nav > li > a:hover {
-    color: white;
-    font-size: 1.5em;
+  color: white;
+  font-size: 1.5em;
 }
 .search_form {
 margin-top: 0;
@@ -101,10 +101,21 @@ footer p {
   font-size: 1.5em;
   padding: 0 10px;
   text-decoration: none;
-  position: fixed;
+  position: absolute;
   top: 60px;
   right: 20px;
   border: 2px solid purple;
+  border-radius: 4px;
+}
+@media only screen and (max-width: 768px) {
+  #new_product_link a {
+    width: 80px;
+    font-size: 1em;
+    text-align: center;
+    top: 131px;
+    right: 31px;
+    border-radius: 4px;
+  }
 }
 #new_product_link a:hover {
   color: purple;
@@ -168,6 +179,11 @@ footer p {
   color: black;
   padding: 0 2px;
   text-align: center;
+}
+.show_links,
+.show_links:hover {
+  color: red;
+  text-decoration: none;
 }
 /* Pagination */
 .pagination {
