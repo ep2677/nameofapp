@@ -6,8 +6,8 @@ describe Product do
     
   
     before do
-      @product = Product.create!(name:"race bike")
-      @user = User.create!(first_name: "Mark", last_name:"Price", email: "MPrice3@yahoo.com", password: "234jhjh34")
+      @product = FactoryGirl.create(:product)
+      @user = FactoryGirl.create(:user)
       @product.comments.create!(rating: 1, user: @user, body: "Awful bike!")
       @product.comments.create!(rating: 3, user: @user, body: "Ok bike!")
       @product.comments.create!(rating: 5, user: @user, body: "Great bike!")
