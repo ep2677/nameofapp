@@ -317,8 +317,8 @@ footer p {
 }
 /* Payment Page */
 .payment_page {
+  background: image-url('happycyclist.png');
   background-color: $maroon;
-  background-image: url('happycyclist.png');
   background-size: 100%;
 }
 @media only screen and (max-width: 768px){
