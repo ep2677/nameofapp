@@ -1,0 +1,531 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 7, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+* {
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+/* Navigation*/
+/* line 12, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-default {
+  background-color: #660000;
+}
+
+/* line 15, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+/* line 18, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-default .navbar-nav > li > a:hover {
+  color: white;
+  font-size: 1.5em;
+}
+
+/* line 22, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.search_form {
+  margin-top: 0;
+}
+
+/* line 25, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.btn-primary {
+  background-color: #FF6600;
+  border-color: #660000;
+}
+
+/* line 29, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.btn-primary:hover {
+  background-color: #FF6600;
+  border-color: #660000;
+}
+
+/* line 33, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+body {
+  height: 100%;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+/* line 38, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+p {
+  padding-left: 10px;
+}
+
+/* line 41, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+h1 {
+  font-family: Arial, Verdana, sans-serif;
+  color: #FF6600;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 16px;
+  padding-left: 5px;
+  overflow: hidden;
+}
+
+/* line 50, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+h2 {
+  font-family: Arial, Verdana, sans-serif;
+  color: #660000;
+  text-align: left;
+  padding-left: 25px;
+}
+
+/* line 56, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+h5 {
+  color: purple;
+}
+
+/* line 59, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.imagediv {
+  background-image: url("bike3.jpg");
+  background-size: cover;
+  border-top: 2px solid #660000;
+  border-bottom: 2px solid #660000;
+}
+
+/* line 65, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.tealbike {
+  display: block;
+  margin: 2em 0;
+  margin-left: 2%;
+  width: 40%;
+  border-radius: 6px;
+  border: 3px solid #660000;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 74, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+  .tealbike {
+    width: 90%;
+    margin: 1em auto;
+  }
+}
+/* line 79, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+#homepage_h2 {
+  margin-top: 50px;
+}
+
+/* line 82, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+footer {
+  background-color: #660000;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+}
+
+/* line 91, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+footer p {
+  padding: 8px;
+}
+
+/* line 94, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+#email_link {
+  color: #FF6600;
+  padding-left: 25px;
+}
+
+/* Bikes PAage */
+/* line 100, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+#new_product_link a {
+  color: white;
+  background-color: purple;
+  font-size: 1.5em;
+  padding: 0 10px;
+  text-decoration: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  border: 2px solid purple;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 113, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+  #new_product_link a {
+    width: 80px;
+    font-size: 1em;
+    text-align: center;
+    top: 131px;
+    right: 31px;
+    border-radius: 4px;
+  }
+}
+/* line 122, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+#new_product_link a:hover {
+  color: purple;
+  background-color: white;
+}
+
+/* line 126, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.product_title {
+  color: #660000;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* line 132, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.product_div,
+.product_section {
+  height: 605px;
+  border: 2px solid white;
+  background: radial-gradient(white, #d3d3d3);
+  display: inline-block;
+  overflow: auto;
+}
+
+/* line 140, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.product_image {
+  height: 300px;
+  text-align: center;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+}
+
+/* line 148, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.product_image > img {
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+}
+
+/* line 153, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.product_description {
+  margin-top: 15px;
+}
+
+/* line 156, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.bottom_div {
+  position: fixed;
+  bottom: 4px;
+}
+
+/* line 160, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+#comments {
+  margin-left: 20px;
+  overflow: auto;
+  text-align: center;
+}
+
+/* line 165, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+#comment_textarea {
+  width: 75%;
+  height: 100px;
+  margin-top: 20px;
+}
+
+/* line 170, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.stripe-button-el {
+  float: right;
+}
+
+/* Links at bottom of Product div */
+/* line 174, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.inline_list {
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 179, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.inline_list li {
+  display: inline-block;
+}
+
+/* line 182, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.inline_list a {
+  font-size: .75em;
+  color: black;
+  padding: 0 2px;
+  text-align: center;
+}
+
+/* line 188, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.show_links,
+.show_links:hover {
+  color: red;
+  text-decoration: none;
+}
+
+/* Pagination */
+/* line 194, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.pagination {
+  color: #660000;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 199, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.pagination a:hover {
+  text-decoration: none;
+}
+
+/* line 202, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.pagination a,
+.pagination a:visited {
+  color: #660000;
+}
+
+/* line 206, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.previous_page,
+.next_page {
+  font-size: 16px;
+  color: #660000;
+}
+
+/* line 211, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.current {
+  color: #FF6600;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Contact Page */
+/* line 218, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.form-group label {
+  color: purple;
+}
+
+/* line 221, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.btn-default {
+  color: white;
+  background-color: #FF6600;
+}
+
+/* line 225, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.btn-default:hover {
+  color: white;
+  background-color: purple;
+}
+
+/* Newproduct, edit..forms */
+/* line 230, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.field {
+  width: 50%;
+  margin-left: 20px;
+}
+
+/* line 234, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.field input {
+  float: right;
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 239, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+  .field {
+    width: 90%;
+  }
+
+  /* line 242, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+  .field input {
+    width: 75%;
+    float: right;
+  }
+}
+/* line 247, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.top_of_field {
+  margin-top: 35px;
+}
+
+/* line 250, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.actions {
+  position: relative;
+  left: 545px;
+  margin-top: 10px;
+  color: #FF6600;
+}
+
+/* line 256, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+#new_listing {
+  margin-left: 20px;
+}
+
+/* Landing Page */
+/* line 261, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+#landing_page {
+  margin-top: 50px;
+}
+
+/* line 264, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-inner > .item > img {
+  margin: 0 auto;
+  height: 500px;
+}
+
+/* line 268, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators li {
+  background-color: #660000;
+}
+
+/* line 271, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators .active {
+  background-color: orange;
+}
+
+/* Forms */
+/* line 275, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.search_label > label {
+  color: blue;
+}
+
+/* line 278, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.labels {
+  color: white;
+}
+
+/* line 281, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.search_box {
+  height: 100%;
+}
+
+/* line 284, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.contact_form {
+  padding: 0 20px;
+}
+
+/* line 287, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.contact_button {
+  padding: 10px;
+}
+
+/* Devise Links */
+/* line 291, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+#devise_links a {
+  color: red;
+}
+
+/* line 294, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.devise_forms {
+  margin-top: 20px;
+}
+
+/* line 297, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+#devise_links {
+  position: fixed;
+  bottom: 60px;
+  margin-left: 30px;
+}
+
+/* Users Pages */
+/* line 303, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.users_links {
+  margin-left: 38px;
+}
+
+/* line 306, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.users_links a {
+  color: purple;
+}
+
+/* line 309, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.users_links li {
+  display: inline-block;
+}
+
+/* line 312, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.new_user_btn {
+  margin-left: 34px;
+}
+
+/* line 315, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.users_div {
+  margin-top: 10px;
+}
+
+/* Payment Page */
+/* line 319, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.payment_page {
+  background-color: #660000;
+  background-size: 100%;
+  background-image: url("happycyclist.png");
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 325, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+  .payment_page {
+    background-image: none;
+    background-color: #660000;
+  }
+}
+/* line 330, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.thankyou_note {
+  background: radial-gradient(white, #d3d3d3);
+  text-align: center;
+  height: 500px;
+  padding-top: 25px;
+  border-radius: 15px;
+}
+
+/* line 337, /Users/edward/Desktop/nameofapp/app/assets/stylesheets/static_pages.scss */
+.create_text {
+  color: purple;
+  font-family: verdana, sans-serif;
+  font-size: 1.3em;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
