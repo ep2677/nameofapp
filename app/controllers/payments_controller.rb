@@ -1,31 +1,31 @@
 class PaymentsController < ApplicationController
+  before_action :authenticate_user!
+
   def create
-    @product = Product.find(params[:product_id])
-    if user_signed_in?
-      @user = current_user
-    else
-      redirect_to new_user_registration_path
-    end
     token = params[:stripeToken]
+    @product = Product.find(params[:product_id])
+    @user = current_user
+
+    # This will charge the user's card:
     begin
       charge = Stripe::Charge.create(
-        amount: (@product.price * 100),
-        currency: "usd",
-        source: token,
-        description: params[:stripeEmail],
-        receipt_email: @user.email
+        :amount => (@product.price * 100).to_i,
+        :currency => "usd",
+        :source => token,
+        :description => params[:stripeEmail],
+        :receipt_email => params[:stripeEmail]
       )
       if charge.paid
-        Order.create(
-          product_id: @product.id,
-          user_id: @user.id,
-          total: @product.price
-          )
+        Order.create(product_id: @product.id, user_id: @user.id,
+      total: @product.price.to_i)
+        redirect_to product_path(@product), notice: 'Purchase successful.  Thank you!'
       end
+
     rescue Stripe::CardError => e
+      # When the card has been declined
       body = e.json_body
       err = body[:error]
       flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
     end
-    end
+   end
 end
