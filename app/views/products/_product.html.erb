@@ -1,9 +1,9 @@
+
 <section class="col-md-6 col-lg-6 col-xs-12 product_section">
   <p class="product_title"><%= product.name %></p>
-
+  <% logger.debug "Product: #{product.name}"%>
   <section class="product_image">
     <% if product.image_url.present? %>
-      
       <%=link_to(image_tag(product.image_url, class:"product_image"), product) %>
     <% end %>
   </section>
