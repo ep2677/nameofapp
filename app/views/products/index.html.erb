@@ -3,7 +3,6 @@
 
 <section class="container-fluid">
   <%= render @products %>
-  <% logger.debug "Product:#{@products.name}"%>
 </section>
 
   <%= will_paginate @products, :page_links =>true %>

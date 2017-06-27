@@ -4,7 +4,6 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    logger.debug "I AM A DEBUGGING STATEMENT"
     byebug
     if params[:q]
       search_term = params[:q]
@@ -33,6 +32,7 @@ class ProductsController < ApplicationController
   # POST /products.json
   def create
     @product = Product.new(product_params)
+    logger.debug "Product: #{@product.name}"
 
     respond_to do |format|
       if @product.save
