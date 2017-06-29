@@ -6,7 +6,7 @@
     <p class="product_title"><%= @product.name %> </p>
     <section class="product_image"> 
       <% if @product.image_url.present? %>
-        <%= image_tag(@product.image_url) %>
+        <%= image_tag(@product.image_url, class:"img-zoom",  data_zoom_image: "@product.image_url") %>
       <% end %>
     </section>
     <p class="product_description"> <%= @product.description %> 

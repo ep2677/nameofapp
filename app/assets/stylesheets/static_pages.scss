@@ -140,7 +140,7 @@ footer p {
 .product_image {
   height: 300px;
   text-align: center;
-  overflow: hidden;
+  overflow: auto;
   max-width: 100%;
   max-height: 100%;
   text-align: center;
@@ -152,6 +152,9 @@ footer p {
 }
 .product_description {
   margin-top: 15px;
+}
+.zoomContainer {
+  overflow: visible;
 }
 .bottom_div {
   position: fixed;
