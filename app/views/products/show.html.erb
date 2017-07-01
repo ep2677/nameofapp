@@ -17,7 +17,7 @@
       <%= hidden_field_tag(:product_id, @product.id) %>
       <%= render partial: 'shared/stripe_checkout_button' %>
     <% end %>
-    <p> Average Rating: <div class="rated" data-score= "<%=@product.average_rating %>"></div></p>
+    <p> Average Rating: <div class="rated" id="average-rating" data-score= "<%=@product.average_rating %>"></div></p>
     
     <%= link_to 'Edit', edit_product_path(@product), class:"show_links" %> |
     <%= link_to 'Back', :back, class:"show_links" %>
