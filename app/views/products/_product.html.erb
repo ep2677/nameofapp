@@ -1,4 +1,4 @@
-
+<% cache product do %>
 <section class="col-md-6 col-lg-6 col-xs-12 product_section">
   <p class="product_title"><%= product.name %></p>
   <section class="product_image">
@@ -11,7 +11,7 @@
 
   <p>Colour: <%= product.colour %></p>
   <p>Price: $<%= product.price %></p>
-
+<% end %>
   <ul class="inline_list">
     <li><%= link_to 'Show', product %>|</li>
     <li><%= link_to 'Edit', edit_product_path(product) %>|</li>

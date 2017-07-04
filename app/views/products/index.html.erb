@@ -1,8 +1,8 @@
-
 <h1>Products</h1>
-
 <section class="container-fluid">
+  <% cache(cache_key_for_products) do %>
   <%= render @products %>
+  <% end %>
 </section>
 
   <%= will_paginate @products, :page_links =>true %>
