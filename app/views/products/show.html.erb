@@ -26,8 +26,9 @@
   </div>
   <div class="col-md-6 col-lg-6 col-xs-12 product_div">
     <h4 class="product_title"> <span class="glyphicon glyphicon-pencil"></span> Comments </h4>
-
     <div id="comments">
+      <div class="alert alert-info" style="display: none" role="alert">
+      A new comment was posted!</div>
       <%= render 'new_comment' %>
       <%= render 'comments' %>
     </div>

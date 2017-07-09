@@ -109,4 +109,6 @@ config.cache_store = :dalli_store,
   }
 
 config.action_mailer.default_url_options = { :host => 'https://bikeberlin77.herokuapp.com'}
+config.web_socket_server_url = "wss://bikeberlin77.herokuapp.com/cable"
+config.action_cable.allowed_request_origins = ['https://bikeberlin77.herokuapp.com', 'http://bikeberlin77.herokuapp.com']
 end
