@@ -1,8 +1,10 @@
 class Users::ConfirmationsController < Devise::ConfirmationsController
   # GET /resource/confirmation/new
-  # def new
-  #   super
-  # end
+   def new
+     super
+        if @user.persisted?
+          UserMailer.welcome(@user).deliver_now
+   end
 
   # POST /resource/confirmation
   # def create
