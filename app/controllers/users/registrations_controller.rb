@@ -7,6 +7,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     super 
     if @user.persisted?
       UserMailer.welcome(@user).deliver_now
+    end
   end
 
   # POST /resource
