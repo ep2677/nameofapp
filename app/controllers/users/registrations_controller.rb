@@ -4,7 +4,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # GET /resource/sign_up
    def new
-    super
+    super 
+    if @user.persisted?
       UserMailer.welcome(@user).deliver_now
   end
 
