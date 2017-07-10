@@ -25,7 +25,7 @@
             <div class="form-group">  
             <%= form_tag("/products", method:"get") do %>
             <%= label_tag(:q, "") %>
-            <%= text_field_tag(:q,"", class: "form-control search_field", placeholder: "search") %>
+            <%= text_field_tag(:q, nil, class: "form-control search_field", placeholder: "search") %>
             <%= submit_tag("Search", class: "btn btn-primary") %>
             </div>
           </form>
@@ -34,7 +34,15 @@
             <li><%=link_to 'Bikes', products_path %></li>
             <li><%=link_to 'About', static_pages_about_path %></li>
             <li><%=link_to 'Contact', static_pages_contact_path %></li>
-            <%end%>
+
+            <% if current_user && current_user.admin? %>
+              <li><%=link_to 'Users', users_path %></li>
+            <% elsif signed_in? %>
+              <li><%=link_to  "My info", edit_user_path(current_user)%></li>
+            <% else %>
+              <li><%=link_to "Sign Up", new_user_registration_path%></li>
+            <% end %>
+            <% end %>
           
             <li>
             <% if user_signed_in? %>
