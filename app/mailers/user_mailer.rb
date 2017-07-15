@@ -19,6 +19,6 @@ class UserMailer < ApplicationMailer
       @product = product
       mail(:from => 'epwalsh77@gmail.com',
           :to => user.email,
-          :subject => "Your order or #{product.name}has been placed.")
+          :subject => "Your order of the #{product.name} bike has been placed.")
     end
 end
