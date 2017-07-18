@@ -6,6 +6,7 @@ describe UsersController do
     @user = FactoryGirl.create(:user)
     @user2 = FactoryGirl.create(:user)
   end
+
   describe 'GET #show' do
     context 'when a user is logged in' do
       before do
@@ -27,7 +28,10 @@ describe UsersController do
       it 'redirects to login' do
         get :show, params: { id: @user.id }
         expect(response).to redirect_to(new_user_session_path)
-        end
       end
     end
+
+  end
 end
+
+

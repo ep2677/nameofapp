@@ -1,1 +1,10 @@
 <h1> Orders </h1>
+
+<% @orders.each do |order| %>
+    <div class="col-lg-offset-3 col-md-offset-3 col-md-3 order_div">
+      <p> User ID: <%= order.user_id %></p>
+      <p> Product:<%= order.product.name %></p>
+      <p> Total: $<%= order.total %></p>
+
+    </div>
+  <% end %>

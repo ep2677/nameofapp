@@ -8,4 +8,9 @@ FactoryGirl.define do
     last_name "Example"
     admin false
   end
+
+  factory :admin, parent: :user do
+    id
+    admin true
+  end
 end

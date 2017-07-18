@@ -37,6 +37,7 @@
 
             <% if current_user && current_user.admin? %>
               <li><%=link_to 'Users', users_path %></li>
+              <li><%=link_to  "My info", edit_user_path(current_user)%></li>
             <% elsif signed_in? %>
               <li><%=link_to  "My info", edit_user_path(current_user)%></li>
             <% else %>

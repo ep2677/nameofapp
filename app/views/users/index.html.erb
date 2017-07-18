@@ -3,7 +3,7 @@
 <h1>Users</h1>
 
     <% @users.each do |user| %>
-    <div class="users_div">
+    <div class="col-lg-offset-3 col-md-offset-3 col-md-3 order_div">
       <ul>
         <li> <strong>First Name:</strong> <%= user.first_name %></li>
         <li> <strong>Last Name: </strong><%= user.last_name %></li>
@@ -18,6 +18,4 @@
     
     <% end %>
 
-<br>
-
-<%= link_to 'New User', new_user_path, class:"btn btn-info new_user_btn" %>
+    <%= link_to 'New User', new_user_path, class:"btn btn-info new_user_btn" %>

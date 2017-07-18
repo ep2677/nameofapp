@@ -322,10 +322,21 @@ footer p {
   display: inline-block;
 }
 .new_user_btn {
-  margin-left: 34px;
+  position: fixed;
+  top: 95px;
+  right: 20px;
 }
 .users_div {
   margin-top: 10px;
+}
+/* order page */
+.order_div {
+  background: radial-gradient(white, #d3d3d3);
+  color: $maroon;
+  text-align: center;
+  padding: 15px;
+  margin: 0 auto;
+  border: 10px solid white;
 }
 /* Payment Page */
 .payment_page {

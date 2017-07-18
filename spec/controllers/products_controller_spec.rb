@@ -1,4 +1,5 @@
 require 'rails_helper'
+
 #index action
 describe ProductsController, type: :controller do
   context 'GET #index' do
@@ -8,6 +9,7 @@ describe ProductsController, type: :controller do
       expect(response).to render_template('index')
     end
   end
+
   #show action
   # connect to redis server:
   context 'GET #show' do
@@ -33,6 +35,7 @@ describe ProductsController, type: :controller do
        expect(Product.new(price:nil)).not_to be_valid
     end  
   end  
+
   #update action
   context "put #update" do
     before do 
@@ -47,6 +50,7 @@ describe ProductsController, type: :controller do
       expect(@product.colour).to eq "brown"
     end
   end
+
   #delete action
   context "delete" do 
     before do 
